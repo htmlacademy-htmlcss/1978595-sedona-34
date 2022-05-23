@@ -15,7 +15,7 @@
         
         <h2 class="visually-hidden">Панель навигации</h2>
 
-        <a class="nav-link img-link" href="index.htlm">
+        <a class="nav-link img-link" href="index.html">
           <img src="" alt="Логотип Седона">
         </a>
 
@@ -27,7 +27,7 @@
             <a class="nav-link" href="#">О Седоне</a>
           </li>
           <li class="list-item">
-            <a class="nav-link" href="catalog.html">Гостиницы</a>
+            <a class="nav-link nav-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
@@ -49,9 +49,124 @@
     </header>
 
 
-    <main>
+    <main class="catalog-main">
+      <header class="inner-header">
         
         <h1 class="heading-text heading-text-1 heading-text-white">Гостиницы Седоны</h1>
+
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumbs-item">Гостиницы</li>    
+        </ul>
+
+      </header>
+
+      <section class="hotel-searching">
+
+        <h2 class="visually-hidden">Форма поиска гостиниц</h2>
+
+
+        <form class="hotel-searching-form" action="https://echo.htmlacademy.ru/" method="POST">
+
+          <fieldset class="form-group">
+
+            <legend class="form-title">Инфраструктура</legend>
+
+            <ul class="form-list">
+              <li class="form-list-item">
+
+                <input class="search-form-checkbox" type="checkbox" name="swimmingpool" checked>Бассейн
+
+              </li>
+
+              <li class="form-list-item">
+                
+                <input class="search-form-checkbox" type="checkbox" name="parking" checked>Парковка
+
+              </li>
+               
+              <li class="form-list-item">
+
+                <input class="search-form-checkbox" type="checkbox" name="wifi" >Wi-fi
+              
+              </li>
+
+            </ul>
+
+          </fieldset>
+
+          <fieldset class="form-group">
+
+            <legend class="form-title">Тип жилья</legend>
+
+            <ul class="form-list">
+              <li class="form-list-item">
+
+                <input class="search-form-radiobutton" type="radio" name="hoteltype" value="hotel">Гостиница
+              
+              </li>
+
+              <li class="form-list-item">
+                
+                <input class="search-form-radiobutton" type="radio" name="hoteltype" value="motel">Мотель
+
+              </li>
+                    
+              <li class="form-list-item">
+                
+                <input class="search-form-radiobutton" type="radio" name="hoteltype" value="apartment">Апартаменты
+
+              </li>
+
+            </ul>
+
+          </fieldset>
+
+          <fieldset class="slider-group">
+
+            <legend class="form-title">Стоимость, &#8381:</legend>
+
+            <!-- Ползунок сделаем потом -->
+
+          </fieldset>
+
+          <fieldset class="button-group">
+
+            <input type="submit" value="Применить">
+            <input type="reset" value="Сброс">
+          </fieldset>
+
+        </form>
+
+      </section>
+
+
+      <section class="search-output">
+
+        <h2 class="visually-hidden">Результаты поиска</h2>
+
+        <section>
+
+          <h3 class="visually-hidden">Сколько найдено гостиниц</h3>
+
+          <p class="heading-text heading-text-2">Найдено гостиниц: 38</p>
+
+        </section>
+
+        <section>
+          
+          <h3 class="visually-hidden">Параметры поиска</h3>
+
+          <select class="search-pattern-select" aria-label="Сортировка параметров поиска">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+
+        </section>
+
+      </section>
+
 
         
     </main>
