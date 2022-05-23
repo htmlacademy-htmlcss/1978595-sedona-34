@@ -124,7 +124,7 @@
 
           <fieldset class="slider-group">
 
-            <legend class="form-title">Стоимость, &#8381:</legend>
+            <legend class="form-title">Стоимость, &#8381;:</legend>
 
             <!-- Ползунок сделаем потом -->
 
@@ -164,6 +164,201 @@
           </select>
 
         </section>
+
+        <section>
+
+          <h3 class="visually-hidden">Параметры поисковой выдачи</h3>
+
+          <a class="output-pattern-button" href="#"><span class="visually-hidden">Плитка</span></a>
+          <a class="output-pattern-button" href="#"><span class="visually-hidden">Слайд</span></a>
+          <a class="output-pattern-button" href="#"><span class="visually-hidden">Список</span></a>
+
+        </section>
+
+        <section class="finding-hotels">
+
+          <h3 class="visually-hidden">Найденные гостиницы</h3>
+
+          <ul class="finding-hotels-list">
+
+            <li class="finding-hotels-list-item">
+
+              <div class="hotel-card">
+                <img src="" alt="Amara Resort & Spa">
+                
+                <h4 class="hotel-card-heading">Amara Resort & Spa</h4>
+                
+                <table class="hotel-card-price-table">
+                  <tr class="hotel-card-price-table-row">
+                    <td class="hotel-card-price-table-cell">Гостиница</td>
+                    <td class="hotel-card-price-table-cell">От 4000 &#8381;</td>
+                  </tr>
+                  
+                </table>
+    
+                <a class="hotel-card-details-button" href="#">Подробнее</a>
+    
+                <button class="hotel-card-favorits-button">В избранное</button>
+    
+                <img src="" alt="четыре звезды"> 
+    
+                <button class="rating-button" disabled>Рейтинг: 8,5</button>           
+    
+              </div>
+              
+            </li>
+
+            <li class="finding-hotels-list-item">
+
+              <div class="hotel-card">
+                <img src="" alt="Villas at Poco Diablo">
+                
+                <h4 class="hotel-card-heading">Villas at Poco Diablo</h4>
+                
+                <table class="hotel-card-price-table">
+                  <tr class="hotel-card-price-table-row">
+                    <td class="hotel-card-price-table-cell">Гостиница</td>
+                    <td class="hotel-card-price-table-cell">От 5000 &#8381;</td>
+                  </tr>
+                  
+                </table>
+    
+                <a class="hotel-card-details-button" href="#">Подробнее</a>
+    
+                <button class="hotel-card-favorits-button hotel-card-favorits-button-green">В избранное</button>
+    
+                <img src="" alt="четыре звезды"> 
+    
+                <button class="rating-button" disabled>Рейтинг: 9,2</button>           
+    
+              </div>
+              
+            </li>
+
+            <li class="finding-hotels-list-item">
+
+              <div class="hotel-card">
+                <img src="" alt="Desert Quail Inn">
+                
+                <h4 class="hotel-card-heading">Desert Quail Inn</h4>
+                
+                <table class="hotel-card-price-table">
+                  <tr class="hotel-card-price-table-row">
+                    <td class="hotel-card-price-table-cell">Гостиница</td>
+                    <td class="hotel-card-price-table-cell">От 2500 &#8381;</td>
+                  </tr>
+                  
+                </table>
+    
+                <a class="hotel-card-details-button" href="#">Подробнее</a>
+    
+                <button class="hotel-card-favorits-button hotel-card-favorits-button-green">В избранное</button>
+    
+                <img src="" alt="три звезды"> 
+    
+                <button class="rating-button" disabled>Рейтинг: 6,9</button>           
+    
+              </div>
+              
+            </li>
+
+            <li class="finding-hotels-list-item">
+
+              <div class="hotel-card">
+                <img src="" alt="GreenTree Inn">
+                
+                <h4 class="hotel-card-heading">GreenTree Inn</h4>
+                
+                <table class="hotel-card-price-table">
+                  <tr class="hotel-card-price-table-row">
+                    <td class="hotel-card-price-table-cell">Гостиница</td>
+                    <td class="hotel-card-price-table-cell">От 1500 &#8381;</td>
+                  </tr>
+                  
+                </table>
+    
+                <a class="hotel-card-details-button" href="#">Подробнее</a>
+    
+                <button class="hotel-card-favorits-button hotel-card-favorits-button-green">В избранное</button>
+    
+                <img src="" alt="две звезды"> 
+    
+                <button class="rating-button" disabled>Рейтинг: 5,0</button>           
+    
+              </div>
+              
+            </li>
+          </ul>
+
+          
+
+        </section>
+
+      </section>
+
+      <section class="pagination">
+
+        <h3 class="visually-hidden">Пагинация</h3>
+
+        <ul class="pagination-list">
+          
+          <li class="pagination-list-item">
+            <a class="pagination-button pagination-button-number" href="#">1</a>
+          </li>
+
+          <li class="pagination-list-item">
+            <a class="pagination-button pagination-button-number" href="#">2</a>
+          </li>
+
+          <li class="pagination-list-item">
+            <a class="pagination-button pagination-button-number" href="#">3</a>
+          </li>
+
+          <li class="pagination-list-item">
+            <a class="pagination-button pagination-button-number" href="#">4</a>
+          </li>
+
+          <li class="pagination-list-item">
+            <p class="pagination-button pagination-button-dots">...</p>
+          </li>
+
+          <li class="pagination-list-item">
+            <a class="pagination-button pagination-button-number" href="#">10</a>
+          </li>
+          
+        </ul>
+
+        <fieldset class="page-count-selection">
+          
+          <label class="page-count-selection-label" for="page-select">Гостиниц на странице:</label>
+
+          <select name="page-count" id="page-select">
+
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4" selected>4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+
+        </fieldset>
+
+      </section>
+
+      <section class="subscription catalog-dubscription">
+
+        <h3 class="visually-hidden">Подписка на рассылку</h3>
+        <p class="heading-text heading-text-2">Подпишитесь на рассылку</p>
+        <p class="standart-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="POST">
+
+          <input class="email-input" type="email" name="email" value="Ваш e-mail">
+          <input class="subscription-button" type="submit">
+
+        </form>
+
 
       </section>
 
