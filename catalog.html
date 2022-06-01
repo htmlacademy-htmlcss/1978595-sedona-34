@@ -7,16 +7,12 @@
   <body>
 
     
-    <h1 class="visually-hidden">Гостиницы Седоны</h1>
-
     <header class="page-header">
 
       <nav class="navigation header-nav">
         
-        <h2 class="visually-hidden">Панель навигации</h2>
-
         <a class="nav-link img-link" href="index.html">
-          <img src="" alt="Логотип Седона">
+          <img src="images/logo.svg" width="139" height="70" alt="Логотип Седона">
         </a>
 
         <ul class="nav-list nav-site">
@@ -36,8 +32,7 @@
             <a class="user-nav-link" href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="list-item">
-            <a class="user-nav-link" href="#"><span class="visually-hidden">Избранное</span></a>
-            <span class="favorites-count">12</span>
+            <a class="user-nav-link" href="#"><span class="visually-hidden">Избранные отели</span> <span class="favorites-count">12</span></a>            
           </li>
           <li class="list-item">
             <a class="user-nav-link button-link" href="#">Хочу сюда!</a>
@@ -53,7 +48,7 @@
     <main class="catalog-main">
       <header class="inner-header">
         
-        <p class="heading-text heading-text-1 heading-text-white">Гостиницы Седоны</p>
+        <h1 class="heading-text heading-text-1 heading-text-white">Гостиницы Седоны</h1>
 
         <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
@@ -132,7 +127,7 @@
           </fieldset>
 
           <fieldset class="button-group">
-
+            <legend class="visually-hidden">Управление формой</legend>
             <input type="submit" value="Применить">
             <input type="reset" value="Сброс">
           </fieldset>
@@ -146,13 +141,7 @@
 
         <h2 class="visually-hidden">Результаты поиска</h2>
 
-        <section>
-
-          <h3 class="visually-hidden">Сколько найдено гостиниц</h3>
-
-          <p class="heading-text heading-text-2">Найдено гостиниц: 38</p>
-
-        </section>
+        <p class="heading-text heading-text-2">Найдено гостиниц: 38</p>
 
         <section>
           
@@ -170,6 +159,8 @@
 
           <h3 class="visually-hidden">Параметры поисковой выдачи</h3>
 
+          <!-- Сделать список -->
+
           <a class="output-pattern-button" href="#"><span class="visually-hidden">Плитка</span></a>
           <a class="output-pattern-button" href="#"><span class="visually-hidden">Слайд</span></a>
           <a class="output-pattern-button" href="#"><span class="visually-hidden">Список</span></a>
@@ -185,10 +176,10 @@
             <li class="finding-hotels-list-item">
 
               <div class="hotel-card">
-                <img src="" alt="Amara Resort & Spa">
-                
+
                 <h4 class="hotel-card-heading">Amara Resort & Spa</h4>
-                
+                <img src="images/hotel-card-photo/amara.jpg" width="300" height="211" alt="Amara Resort & Spa">
+                               
                 <table class="hotel-card-price-table">
                   <tr class="hotel-card-price-table-row">
                     <td class="hotel-card-price-table-cell">Гостиница</td>
@@ -201,10 +192,8 @@
     
                 <button class="hotel-card-favorits-button">В избранное</button>
     
-                <span class="rating-star visually-hidden">Звезда</span>
-                <span class="rating-star visually-hidden">Звезда</span>
-                <span class="rating-star visually-hidden">Звезда</span>
-                <span class="rating-star visually-hidden">Звезда</span>
+                <span class="rating-star-4 visually-hidden">Четыре звезды</span>
+                
     
                 <p class="rating-button">Рейтинг: 8,5</p>           
     
@@ -215,9 +204,10 @@
             <li class="finding-hotels-list-item">
 
               <div class="hotel-card">
-                <img src="" alt="Villas at Poco Diablo">
-                
+
                 <h4 class="hotel-card-heading">Villas at Poco Diablo</h4>
+                
+                <img src="images/hotel-card-photo/villas.jpg" width="300" height="211" alt="Villas at Poco Diablo">
                 
                 <table class="hotel-card-price-table">
                   <tr class="hotel-card-price-table-row">
@@ -231,10 +221,7 @@
     
                 <button class="hotel-card-favorits-button hotel-card-favorits-button-green">В избранное</button>
     
-                <span class="rating-star visually-hidden">Звезда</span>
-                <span class="rating-star visually-hidden">Звезда</span>
-                <span class="rating-star visually-hidden">Звезда</span>
-                <span class="rating-star visually-hidden">Звезда</span>
+                <span class="rating-star-4 visually-hidden">Четыре звезды</span>
     
                 <p class="rating-button">Рейтинг: 9,2</p>           
     
@@ -245,9 +232,11 @@
             <li class="finding-hotels-list-item">
 
               <div class="hotel-card">
-                <img src="" alt="Desert Quail Inn">
-                
+
                 <h4 class="hotel-card-heading">Desert Quail Inn</h4>
+                
+                <img src="images/hotel-card-photo/desert.jpg" width="300" height="211" alt="Desert Quail Inn">
+                             
                 
                 <table class="hotel-card-price-table">
                   <tr class="hotel-card-price-table-row">
@@ -261,9 +250,7 @@
     
                 <button class="hotel-card-favorits-button hotel-card-favorits-button-green">В избранное</button>
     
-                <span class="rating-star visually-hidden">Звезда</span>
-                <span class="rating-star visually-hidden">Звезда</span>
-                <span class="rating-star visually-hidden">Звезда</span>
+                <span class="rating-star-3 visually-hidden">Три звезды</span>
                     
                 <p class="rating-button">Рейтинг: 6,9</p>           
     
@@ -274,9 +261,9 @@
             <li class="finding-hotels-list-item">
 
               <div class="hotel-card">
-                <img src="" alt="GreenTree Inn">
-                
+
                 <h4 class="hotel-card-heading">GreenTree Inn</h4>
+                <img src="images/hotel-card-photo/greentree.jpg" width="300" height="211" alt="GreenTree Inn">
                 
                 <table class="hotel-card-price-table">
                   <tr class="hotel-card-price-table-row">
@@ -290,8 +277,7 @@
     
                 <button class="hotel-card-favorits-button hotel-card-favorits-button-green">В избранное</button>
     
-                <span class="rating-star visually-hidden">Звезда</span>
-                <span class="rating-star visually-hidden">Звезда</span>
+                <span class="rating-star-2 visually-hidden">Две звезды</span>
                     
                 <p class="rating-button">Рейтинг: 5,0</p>           
     
@@ -356,7 +342,7 @@
 
       </section>
 
-      <section class="subscription catalog-dubscription">
+      <section class="subscription subscription--catalog">
 
         <h3 class="visually-hidden">Подписка на рассылку</h3>
         <p class="heading-text heading-text-2">Подпишитесь на рассылку</p>
@@ -382,7 +368,7 @@
 
     <footer class="page-footer">
 
-        <h2 class="visually-hidden">Подвал страницы.</h2>
+        <h2 class="visually-hidden">Контакты.</h2>
   
         <ul class="nav-list nav-social">
           <li class="list-item">
@@ -399,7 +385,7 @@
         <a class="tel-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
   
         <a class="img-link" href="https://htmlacademy.ru/">
-          <img src="" alt="Логотип HTML-Academy">
+          <img src="images/social/HTML_Academy.svg" alt="Логотип HTML-Academy">
         </a>
   
   
