@@ -46,12 +46,17 @@ body {
   line-height: 21px;
 }
 
+.standart-text-small-2 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .standart-text-white {
   color: #FFFFFF;
 }
 
 
-/* 1.1.2 Заголовки */
+/* 1.1.2. Заголовки */
 
 .heading-text {
   font-family: 'PT Sans';
@@ -87,7 +92,8 @@ body {
 }
 
 
-/* 1.1.3 Для кнопок и кнопочных ссылок */
+
+/* 1.1.3. Для кнопок и кнопочных ссылок */
 .button-small-text {
   font-size: 16px;
   line-height: 20px;
@@ -100,19 +106,22 @@ body {
 
 .button-link {
   text-decoration: none;
+
+}
+
+.buttons {
+  font-family: 'PT Sans';
+}
+
+.buttons, .button-link {
+  text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   color: #FFFFFF;
 }
 
-.buttons{
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #FFFFFF;
-}
 
-
-/* 1.1.4 Для текстовых ссылок */
+/* 1.1.4. Для текстовых ссылок */
 
 .nav-link {
   color: #000000;
@@ -120,8 +129,13 @@ body {
   font-weight: 700;
 }
 
+.breadcrumbs-link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
 
-/* Одиночные компоненты */
+
+/* 1.1.5. Одиночные компоненты */
 
 .tel-link {
   font-family: 'PT Sans';
@@ -132,11 +146,26 @@ body {
   text-transform: uppercase;
 }
 
+.hotel-card-heading {
+  text-transform: none;
+}
 
-/* 1.2. Для блоков */
+/* 1.2. Размеры и фоны */
+
+.buttons {
+  background-color: #82B3D3;
+}
+
+.button-link {
+  background-color: #756157;
+}
 
 .subscription {
   background-image: url(../images/backgrounds/subscription-background.jpg);
   background-repeat: no-repeat;
+}
+
+.hotel-searching {
+  background-image: url(../images/backgrounds/catalog-background.jpg);
 }
 

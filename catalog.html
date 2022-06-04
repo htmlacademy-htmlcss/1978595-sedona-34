@@ -47,18 +47,20 @@
 
 
     <main class="catalog-main">
-      <header class="inner-header">
-
-        <h1 class="heading-text heading-text-1 heading-text-white">Гостиницы Седоны</h1>
-
-        <ol class="breadcrumbs-list">
-          <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
-          <li class="breadcrumbs-item">Гостиницы</li>
-        </ol>
-
-      </header>
 
       <section class="hotel-searching">
+        <header class="inner-header">
+
+          <h1 class="heading-text heading-text-1 heading-text-white">Гостиницы Седоны</h1>
+
+          <ol class="breadcrumbs-list">
+            <li class="breadcrumbs-item "><a class="breadcrumbs-link standart-text standart-text-small-2 standart-text-white visually-hidden" href="index.html">Главная</a></li>
+            <li class="breadcrumbs-item standart-text standart-text-small-2 standart-text-white">Гостиницы</li>
+          </ol>
+
+        </header>
+
+
 
         <h2 class="visually-hidden">Форма поиска гостиниц</h2>
 
@@ -67,24 +69,24 @@
 
           <fieldset class="form-group">
 
-            <legend class="form-title">Инфраструктура</legend>
+            <legend class="form-title  heading-text heading-text-4 heading-text-white">Инфраструктура</legend>
 
             <ul class="form-list">
               <li class="form-list-item">
 
-                <label class="input-label"> <input class="search-form-checkbox" type="checkbox" name="swimmingpool" checked>Бассейн </label>
+                <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-checkbox" type="checkbox" name="swimmingpool" checked>Бассейн </label>
 
               </li>
 
               <li class="form-list-item">
 
-                <label class="input-label"> <input class="search-form-checkbox" type="checkbox" name="parking" checked>Парковка </label>
+                <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-checkbox" type="checkbox" name="parking" checked>Парковка </label>
 
               </li>
 
               <li class="form-list-item">
 
-                <label class="input-label"> <input class="search-form-checkbox" type="checkbox" name="wifi" >Wi-fi </label>
+                <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-checkbox" type="checkbox" name="wifi" >Wi-Fi </label>
 
               </li>
 
@@ -94,24 +96,24 @@
 
           <fieldset class="form-group">
 
-            <legend class="form-title">Тип жилья</legend>
+            <legend class="form-title  heading-text heading-text-4 heading-text-white">Тип жилья</legend>
 
             <ul class="form-list">
               <li class="form-list-item">
 
-                <label class="input-label"> <input class="search-form-radiobutton" type="radio" name="hoteltype" value="hotel">Гостиница </label>
+                <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-radiobutton" type="radio" name="hoteltype" value="hotel">Гостиница </label>
 
               </li>
 
               <li class="form-list-item">
 
-                <label class="input-label"> <input class="search-form-radiobutton" type="radio" name="hoteltype" value="motel">Мотель </label>
+                <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-radiobutton" type="radio" name="hoteltype" value="motel">Мотель </label>
 
               </li>
 
               <li class="form-list-item">
 
-                <label class="input-label"> <input class="search-form-radiobutton" type="radio" name="hoteltype" value="apartment">Апартаменты </label>
+                <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-radiobutton" type="radio" name="hoteltype" value="apartment">Апартаменты </label>
 
               </li>
 
@@ -119,18 +121,20 @@
 
           </fieldset>
 
-          <fieldset class="slider-group">
+          <fieldset class="slider-group ">
 
-            <legend class="form-title">Стоимость, &#8381;:</legend>
+            <legend class="form-title heading-text heading-text-4 heading-text-white">Стоимость, &#8381;:</legend>
 
             <!-- Ползунок сделаем потом -->
 
           </fieldset>
 
           <fieldset class="button-group">
+
             <legend class="visually-hidden">Управление формой</legend>
-            <input type="submit" value="Применить">
-            <input type="reset" value="Сброс">
+            <input class="buttons" type="submit" value="Применить">
+            <input class="reset-button" type="reset" value="Сброс">
+
           </fieldset>
 
         </form>
@@ -148,7 +152,7 @@
 
           <h3 class="visually-hidden">Параметры поиска</h3>
 
-          <select class="search-pattern-select" aria-label="Сортировка параметров поиска">
+          <select class="search-pattern-select standart-text standart-text-small" aria-label="Сортировка параметров поиска">
             <option value="popular">Сначала популярные</option>
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
@@ -178,7 +182,7 @@
 
               <div class="hotel-card">
 
-                <h4 class="hotel-card-heading">Amara Resort & Spa</h4>
+                <h4 class="hotel-card-heading heading-text heading-text-3">Amara Resort & Spa</h4>
                 <img src="images/hotel-card-photo/amara.jpg" width="300" height="211" alt="Amara Resort & Spa">
 
                 <table class="hotel-card-price-table">
@@ -206,7 +210,7 @@
 
               <div class="hotel-card">
 
-                <h4 class="hotel-card-heading">Villas at Poco Diablo</h4>
+                <h4 class="hotel-card-heading heading-text heading-text-3">Villas at Poco Diablo</h4>
 
                 <img src="images/hotel-card-photo/villas.jpg" width="300" height="211" alt="Villas at Poco Diablo">
 
@@ -234,7 +238,7 @@
 
               <div class="hotel-card">
 
-                <h4 class="hotel-card-heading">Desert Quail Inn</h4>
+                <h4 class="hotel-card-heading heading-text heading-text-3">Desert Quail Inn</h4>
 
                 <img src="images/hotel-card-photo/desert.jpg" width="300" height="211" alt="Desert Quail Inn">
 
@@ -263,7 +267,7 @@
 
               <div class="hotel-card">
 
-                <h4 class="hotel-card-heading">GreenTree Inn</h4>
+                <h4 class="hotel-card-heading heading-text heading-text-3">GreenTree Inn</h4>
                 <img src="images/hotel-card-photo/greentree.jpg" width="300" height="211" alt="GreenTree Inn">
 
                 <table class="hotel-card-price-table">
