@@ -117,11 +117,8 @@ body {
 
 }
 
-.button {
-  font-family: 'PT Sans';
-}
-
 .button, .button-link, .rating-button {
+  font-family: 'PT Sans';
   text-align: center;
   text-transform: uppercase;
 
@@ -155,7 +152,10 @@ body {
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
 
 .hotel-card-heading {
@@ -163,13 +163,42 @@ body {
 }
 
 .rating-button {
-  color:#333333;
+  color: #333333;
+}
+
+.pagination-button-current {
+  color: #000000;
 }
 
 
 
 
 /* 1.2. Размеры и фоны */
+
+
+
+/* 1.2.1. Для больших секций */
+
+.subscription {
+  background-image: url(../images/backgrounds/subscription-background.jpg);
+  background-repeat: no-repeat;
+}
+
+.subscription--catalog {
+  background-image: none;
+  background-color: #FFFFFF;
+}
+
+.hotel-searching {
+  background-image: url(../images/backgrounds/catalog-background.jpg);
+}
+
+
+/* 1.2.2. Для блоков */
+
+
+
+/* 1.2.3. Для кнопок и ссылок */
 
 .button {
   background-color: #82B3D3;
@@ -179,12 +208,21 @@ body {
   background-color: #756157;
 }
 
-.subscription {
-  background-image: url(../images/backgrounds/subscription-background.jpg);
-  background-repeat: no-repeat;
+.pagination-button {
+  background-color: #82B3D3;
 }
 
-.hotel-searching {
-  background-image: url(../images/backgrounds/catalog-background.jpg);
+.pagination-button-current {
+  background-color: #F2F2F2;
 }
+
+.hotel-card-favorits-button-green {
+  background-color: #7DB54F;
+}
+
+.reset-button {
+  background-color: rgba(0,0,0,0);
+}
+
+
 
