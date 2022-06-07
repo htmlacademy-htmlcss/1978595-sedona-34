@@ -121,7 +121,6 @@ body {
   font-family: 'PT Sans';
   text-align: center;
   text-transform: uppercase;
-
   color: #FFFFFF;
 }
 
@@ -172,12 +171,25 @@ body {
 
 
 
+/* 1.1.6. Горизонтальное выравнивание */
 
-/* 1.2. Размеры и фоны */
+.sedona-head, .advantages, .search-block, .subscription {
+  text-align: center;
+}
+
+
+
+
+/* 1.2. Размеры и фоны,  */
 
 
 
 /* 1.2.1. Для больших секций */
+
+body {
+  width: 1280px;
+  height: 3315px;
+}
 
 .subscription {
   background-image: url(../images/backgrounds/subscription-background.jpg);
@@ -196,21 +208,50 @@ body {
 
 /* 1.2.2. Для блоков */
 
+.adv-brick-blue {
+  background-color: #82B3D3;
+}
 
+.adv-brick-lightblue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.adv-brick-verylightblue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
 
 /* 1.2.3. Для кнопок и ссылок */
 
 .button {
   background-color: #82B3D3;
+  border-radius: 4px;
 }
 
 .button-link {
   background-color: #756157;
+  border-radius: 4px;
 }
 
 .pagination-button {
   background-color: #82B3D3;
+  border-radius: 4px;
 }
+
+/* .navigation .button-link {
+  display: block;
+  width: 160px;
+  height: 37px;
+}
+
+.search-block .button-link {
+  display: block;
+  width: 574px;
+  height: 60px;
+  padding: 0px;
+} */
+
+
+/* Отдельные компоненты */
 
 .pagination-button-current {
   background-color: #F2F2F2;
