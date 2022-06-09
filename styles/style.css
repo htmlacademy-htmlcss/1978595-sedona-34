@@ -177,9 +177,9 @@ body {
 
 
 
-/* 1.1.6. Горизонтальное выравнивание */
+/* 1.1.6. Горизонтальное выравнивание текста */
 
-.sedona-head, .advantages, .search-block, .subscription {
+.text-centered {
   text-align: center;
 }
 
