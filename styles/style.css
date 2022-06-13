@@ -192,9 +192,19 @@ body {
 
 /* 1.2.1. Для больших секций */
 
-body {
-  width: 1280px;
-  height: 3315px;
+body{
+  background-color: #E5E5E5;
+}
+
+.page-container{
+  background-color: #FFFFFF;
+}
+
+.sedona-banner {
+  width: 1200px;
+  height: 485px;
+  background-image: url(../images/backgrounds/banner-background.jpg);
+  background-size: 1200px 485px;
 }
 
 .subscription {
@@ -273,3 +283,39 @@ body {
 
 
 
+/* 2. Сетки. */
+
+/* 2.1. Для крупных блоков */
+
+html{
+  height: 100%;
+}
+
+body {
+  /* width: 1280px; */
+  margin: 0;
+  height: 100%;
+}
+
+.page-container{
+  /* width:  1200px; */
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container{
+  flex-grow: 1;
+}
+
+.navigation{
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.page-footer{
+  width: 100%;
+  display: flex;
+}
