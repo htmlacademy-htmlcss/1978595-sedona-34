@@ -219,6 +219,7 @@ body{
 
 .hotel-searching {
   background-image: url(../images/backgrounds/catalog-background.jpg);
+  background-repeat: no-repeat;
 }
 
 
@@ -292,14 +293,14 @@ html{
 }
 
 body {
-  /* width: 1280px; */
+  min-width: 1280px;
   margin: 0;
   height: 100%;
 }
 
 .page-container{
-  /* width:  1200px; */
-  margin: 0 40px;
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -315,7 +316,45 @@ body {
   margin: 0 auto;
 }
 
-.page-footer{
-  width: 100%;
+.nav-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-logo{
+  margin-left: 70px;
+  margin-right: 30px;
+}
+
+.nav-site{
+  width: 390px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.nav-user{
+  max-width: 264px;
+  margin-right: 70px;
+  margin-left: auto;
+}
+
+.sedona-head{
+  width:1200px;
+  margin: 0 auto;
+}
+
+.search-block{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.subscription{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-container{
+  width: 1200px;
   display: flex;
 }
