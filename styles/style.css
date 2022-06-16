@@ -354,31 +354,25 @@ body {
   margin: 0 auto;
 }
 
-.breadcrumbs-list{
-  display: flex;
-  flex-direction: row;
-
-
+.hotel-searching{
+  width: 1060px;
+  padding: 35px 70px 70px 70px;
 }
 
 .hotel-searching-form{
-  width: 1200px;
+  width: 1060px;
   display: flex;
 }
 
 .hotel-search-form-left{
   display: flex;
-  margin-left: 70px;
   margin-right: auto;
-  margin-bottom: 70px;
   justify-content: space-between;
 }
 
 .hotel-search-form-right{
   display: flex;
   margin-left: auto;
-  margin-right: 70px;
-  margin-bottom: 70px;
   justify-content: space-between;
 }
 
