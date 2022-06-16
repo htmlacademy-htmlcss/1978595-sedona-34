@@ -67,75 +67,83 @@
 
           <form class="hotel-searching-form" action="https://echo.htmlacademy.ru/" method="POST">
 
-            <fieldset class="form-group">
+            <div class="hotel-search-form-left">
 
-              <legend class="form-title  heading-text-4 heading-text-white">Инфраструктура</legend>
+              <fieldset class="form-group">
 
-              <ul class="form-list">
-                <li class="form-list-item">
+                <legend class="form-title  heading-text-4 heading-text-white">Инфраструктура</legend>
 
-                  <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-checkbox" type="checkbox"   name="swimmingpool" checked>Бассейн </label>
+                <ul class="form-list">
+                  <li class="form-list-item">
 
-                </li>
+                    <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-checkbox" type="checkbox"     name="swimmingpool" checked>Бассейн </label>
 
-                <li class="form-list-item">
+                  </li>
 
-                  <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-checkbox" type="checkbox"   name="parking" checked>Парковка </label>
+                  <li class="form-list-item">
 
-                </li>
+                    <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-checkbox" type="checkbox"     name="parking" checked>Парковка </label>
 
-                <li class="form-list-item">
+                  </li>
 
-                  <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-checkbox" type="checkbox" name="wifi"   >Wi-Fi </label>
+                  <li class="form-list-item">
 
-                </li>
+                    <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-checkbox" type="checkbox"   name="wifi"   >Wi-Fi </label>
 
-              </ul>
+                  </li>
 
-            </fieldset>
+                </ul>
 
-            <fieldset class="form-group">
+              </fieldset>
 
-              <legend class="form-title  heading-text-4 heading-text-white">Тип жилья</legend>
+              <fieldset class="form-group">
 
-              <ul class="form-list">
-                <li class="form-list-item">
+                <legend class="form-title  heading-text-4 heading-text-white">Тип жилья</legend>
 
-                  <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-radiobutton" type="radio"   name="hoteltype" value="hotel">Гостиница </label>
+                <ul class="form-list">
+                  <li class="form-list-item">
 
-                </li>
+                    <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-radiobutton" type="radio"     name="hoteltype" value="hotel">Гостиница </label>
 
-                <li class="form-list-item">
+                  </li>
 
-                  <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-radiobutton" type="radio"   name="hoteltype" value="motel">Мотель </label>
+                  <li class="form-list-item">
 
-                </li>
+                    <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-radiobutton" type="radio"     name="hoteltype" value="motel">Мотель </label>
 
-                <li class="form-list-item">
+                  </li>
 
-                  <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-radiobutton" type="radio"   name="hoteltype" value="apartment">Апартаменты </label>
+                  <li class="form-list-item">
 
-                </li>
+                    <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-radiobutton" type="radio"     name="hoteltype" value="apartment">Апартаменты </label>
 
-              </ul>
+                  </li>
 
-            </fieldset>
+                </ul>
 
-            <fieldset class="slider-group ">
+              </fieldset>
 
-              <legend class="form-title heading-text-4 heading-text-white">Стоимость, &#8381;:</legend>
+            </div>
 
-              <!-- Ползунок сделаем потом -->
+            <div class="hotel-search-form-right">
 
-            </fieldset>
+              <fieldset class="slider-group ">
 
-            <fieldset class="button-group">
+                <legend class="form-title heading-text-4 heading-text-white">Стоимость, &#8381;:</legend>
 
-              <legend class="visually-hidden">Управление формой</legend>
-              <input class="button button-small-text-bold" type="submit" value="Применить">
-              <input class="reset-button button button-small-text" type="reset" value="Сбросить">
+                <!-- Ползунок сделаем потом -->
 
-            </fieldset>
+              </fieldset>
+
+              <fieldset class="button-group">
+
+                <legend class="visually-hidden">Управление формой</legend>
+                <input class="button button-small-text-bold" type="submit" value="Применить">
+                <input class="reset-button button button-small-text" type="reset" value="Сбросить">
+
+              </fieldset>
+
+            </div>
 
           </form>
 
@@ -146,37 +154,41 @@
 
           <h2 class="visually-hidden">Результаты поиска</h2>
 
-          <p class="heading-text-2">Найдено гостиниц: 38</p>
+          <div class="search-results-container">
 
-          <section>
+            <p class="search-results-output heading-text-2">Найдено гостиниц: 38</p>
 
-            <h3 class="visually-hidden">Параметры поиска</h3>
+            <section>
 
-            <select class="search-pattern-select standart-text standart-text-small" aria-label="Сортировка параметров поиска">
-              <option value="popular">Сначала популярные</option>
-              <option value="cheap">Сначала дешёвые</option>
-              <option value="expensive">Сначала дорогие</option>
-            </select>
+              <h3 class="visually-hidden">Параметры поиска</h3>
 
-          </section>
+              <select class="search-pattern-select standart-text standart-text-small" aria-label="Сортировка параметров поиска">
+                <option value="popular">Сначала популярные</option>
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
 
-          <section>
+            </section>
 
-            <h3 class="visually-hidden">Параметры поисковой выдачи</h3>
+            <section class="output-pattern-select">
 
-            <ul class="search-output-pattern-list">
-            <li class="search-output-pattern-list-item">
-              <a class="output-pattern-button" href="#"><span class="visually-hidden">Плитка</span></a>
-            </li class="search-output-pattern-list-item">
-            <li>
-              <a class="output-pattern-button" href="#"><span class="visually-hidden">Слайд</span></a>
-            </li>
-            <li class="search-output-pattern-list-item">
-              <a class="output-pattern-button" href="#"><span class="visually-hidden">Список</span></a>
-            </li>
-            </ul>
+              <h3 class="visually-hidden">Параметры поисковой выдачи</h3>
 
-          </section>
+              <ul class="search-output-pattern-list">
+              <li class="search-output-pattern-list-item">
+                <a class="output-pattern-button" href="#"><span class="visually-hidden">Плитка</span></a>
+              </li class="search-output-pattern-list-item">
+              <li>
+                <a class="output-pattern-button" href="#"><span class="visually-hidden">Слайд</span></a>
+              </li>
+              <li class="search-output-pattern-list-item">
+                <a class="output-pattern-button" href="#"><span class="visually-hidden">Список</span></a>
+              </li>
+              </ul>
+
+            </section>
+
+          </div>
 
           <section class="finding-hotels">
 
@@ -305,7 +317,7 @@
 
         <section class="pagination">
 
-          <h3 class="visually-hidden">Пагинация</h3>
+          <h3 class="visually-hidden" style="display:none">Пагинация</h3>
 
           <ul class="pagination-list">
 
@@ -326,7 +338,7 @@
             </li>
 
             <li class="pagination-list-item">
-              <p class="pagination-button button-link button-big-text ">...</p>
+              <a class="pagination-button button-link button-big-text ">...</a>
             </li>
 
             <li class="pagination-list-item">
@@ -379,29 +391,25 @@
 
       <footer class="page-footer">
 
-        <h2 class="visually-hidden">Контакты.</h2>
+        <h2 class="visually-hidden" style="display:none">Контакты.</h2>
 
-        <div class="footer-container">
+        <ul class="nav-list nav-social">
+          <li class="list-item">
+            <a class="social-link" href="https://vk.com/htmlacademy">Vkontakte</a>
+          </li>
+          <li class="list-item">
+            <a class="social-link" href="https://t.me/htmlacademy">Telegram</a>
+          </li>
+          <li class="list-item">
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">YouTube</a>
+          </li>
+        </ul>
 
-          <ul class="nav-list nav-social">
-            <li class="list-item">
-              <a class="social-link" href="https://vk.com/htmlacademy">Vkontakte</a>
-            </li>
-            <li class="list-item">
-              <a class="social-link" href="https://t.me/htmlacademy">Telegram</a>
-            </li>
-            <li class="list-item">
-              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">YouTube</a>
-            </li>
-          </ul>
+        <a class="tel-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
-          <a class="tel-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-
-          <a class="img-link" href="https://htmlacademy.ru/">
-            <img src="images/social/html_academy.svg" alt="Логотип HTML-Academy">
-          </a>
-
-        </div>
+        <a class="img-link" href="https://htmlacademy.ru/">
+          <img src="images/social/html_academy.svg" alt="Логотип HTML-Academy">
+        </a>
 
       </footer>
     </div>

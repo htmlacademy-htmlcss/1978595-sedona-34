@@ -354,7 +354,67 @@ body {
   margin: 0 auto;
 }
 
-.footer-container{
+.breadcrumbs-list{
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.hotel-searching-form{
   width: 1200px;
   display: flex;
+}
+
+.hotel-search-form-left{
+  display: flex;
+  margin-left: 70px;
+  margin-right: auto;
+  margin-bottom: 70px;
+  justify-content: space-between;
+}
+
+.hotel-search-form-right{
+  display: flex;
+  margin-left: auto;
+  margin-right: 70px;
+  margin-bottom: 70px;
+  justify-content: space-between;
+}
+
+.search-results-container{
+  width: 1200px;
+  display: flex;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.search-results-container .search-results-output{
+  margin-right: 191px;
+}
+
+.search-results-container .output-pattern-select{
+  margin-right: 0;
+}
+
+.pagination{
+  display: flex;
+  width: 1060px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 70px;
+}
+
+.pagination-list{
+  display: flex;
+  list-style: none;
+}
+
+.page-footer{
+  width: 1060px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 70px 30px 70px;
 }
