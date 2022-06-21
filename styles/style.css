@@ -192,9 +192,19 @@ body {
 
 /* 1.2.1. Для больших секций */
 
-body {
-  width: 1280px;
-  height: 3315px;
+body{
+  background-color: #E5E5E5;
+}
+
+.page-container{
+  background-color: #FFFFFF;
+}
+
+.sedona-banner {
+  width: 1200px;
+  height: 485px;
+  background-image: url(../images/backgrounds/banner-background.jpg);
+  background-size: 1200px 485px;
 }
 
 .subscription {
@@ -209,6 +219,7 @@ body {
 
 .hotel-searching {
   background-image: url(../images/backgrounds/catalog-background.jpg);
+  background-repeat: no-repeat;
 }
 
 
@@ -273,3 +284,131 @@ body {
 
 
 
+/* 2. Сетки. */
+
+/* 2.1. Для крупных блоков */
+
+html{
+  height: 100%;
+}
+
+body {
+  min-width: 1280px;
+  margin: 0;
+  height: 100%;
+}
+
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container{
+  flex-grow: 1;
+}
+
+.navigation{
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.nav-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-logo{
+  margin-left: 70px;
+  margin-right: 30px;
+}
+
+.nav-site{
+  width: 390px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.nav-user{
+  max-width: 264px;
+  margin-right: 70px;
+  margin-left: auto;
+}
+
+.sedona-head{
+  width:1200px;
+  margin: 0 auto;
+}
+
+.search-block{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.subscription{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hotel-searching{
+  width: 1060px;
+  padding: 35px 70px 70px 70px;
+}
+
+.hotel-searching-form{
+  width: 1060px;
+  display: flex;
+}
+
+.hotel-search-form-left{
+  display: flex;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.hotel-search-form-right{
+  display: flex;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.search-results-container{
+  width: 1200px;
+  display: flex;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.search-results-container .search-results-output{
+  margin-right: 191px;
+}
+
+.search-results-container .output-pattern-select{
+  margin-right: 0;
+}
+
+.pagination{
+  display: flex;
+  width: 1060px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 70px;
+}
+
+.pagination-list{
+  display: flex;
+  list-style: none;
+}
+
+.page-footer{
+  width: 1060px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 70px 30px 70px;
+}
