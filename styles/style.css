@@ -25,6 +25,19 @@ body {
 
 }
 
+/* Вспомогательное */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 /* 1. Базовые стили */
 
@@ -201,10 +214,11 @@ body{
 }
 
 .sedona-banner {
-  width: 1200px;
-  height: 485px;
+  /* width: 1200px;
+  height: 485px; */
   background-image: url(../images/backgrounds/banner-background.jpg);
   background-size: 1200px 485px;
+  background-repeat: no-repeat;
 }
 
 .subscription {
@@ -319,8 +333,7 @@ body {
 .nav-list{
   padding: 0;
   margin: 0;
-  list-style: none;
-}
+  }
 
 .nav-logo{
   margin-left: 70px;
@@ -411,4 +424,82 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 40px 70px 30px 70px;
+}
+
+
+/* 2.2 Для компонентов */
+
+.nav-logo{
+  margin-bottom:-10px;
+}
+
+.nav-list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-site .nav-link{
+  display: block;
+  padding: 20px 17px;
+}
+
+.nav-user{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-user .button-link{
+  padding: 9px 35px;
+  display: block;
+}
+
+.nav-user .link-icon{
+  display: block;
+  background-color: grey;
+  min-width: 42px;
+  min-height: 66px
+}
+
+.sedona-banner{
+  padding-top: 51px;
+  padding-bottom: 82px;
+  margin-bottom: 57px;
+}
+
+.sedona-slogan{
+  width: 620px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.search-block .standart-text{
+  width: 595px;
+  margin: 0 auto;
+  padding-bottom: 55px;
+}
+
+.search-block .button-link{
+  margin: 0 auto;
+  width: 574px;
+  display: block;
+  padding: 17px 0;
+  margin-bottom: 93px;
+}
+
+.subscription .title{
+  padding-top: 94px;
+  padding-bottom: 29px;
+  margin: 0;
+}
+
+.subscription .standart-text{
+  padding-bottom: 46px;
+  margin: 0;
+}
+
+.subscription-form{
+  padding-bottom: 80px;
 }
