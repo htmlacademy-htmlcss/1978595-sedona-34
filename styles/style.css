@@ -369,7 +369,8 @@ body {
 
 .hotel-searching{
   width: 1060px;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 51px 70px;
+  margin-bottom: 55px;
 }
 
 .hotel-searching-form{
@@ -390,10 +391,10 @@ body {
 }
 
 .search-results-container{
-  width: 1200px;
+  width: 1080px;
   display: flex;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin:0 70px 0 70px;
+
 }
 
 .search-results-container .search-results-output{
@@ -502,4 +503,93 @@ body {
 
 .subscription-form{
   padding-bottom: 80px;
+}
+
+.page-heading{
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.breadcrumbs-list{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  margin-bottom:40px;
+}
+
+.form-group{
+  padding: 0;
+  border: 0;
+}
+
+.infra{
+  margin-right: 70px;
+}
+
+.slider-group{
+  padding: 0;
+  border: 0;
+}
+
+.button-group{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: 0;
+}
+
+.button-group .submit-button{
+  margin-top: 60px;
+  padding: 14px 35px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.button-group .reset-button{
+  padding: 20px 35px;
+  border: 0;
+
+}
+
+.form-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-title{
+  margin-bottom: 26px;
+}
+
+.form-list-item{
+  margin-bottom: 10px;
+}
+
+.form-list-item:last-child{
+  margin-bottom: 0;
+}
+
+.search-results-output{
+  margin: 0;
+}
+
+.search-output-pattern-list{
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.search-output-pattern-list-item{
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.search-output-pattern-list-item-selected{
+  border-color: #000000;
+}
+
+.output-pattern-select{
+  margin-left: auto;
 }
