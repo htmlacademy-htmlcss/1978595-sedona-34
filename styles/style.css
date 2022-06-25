@@ -409,16 +409,17 @@ body {
 
 .pagination{
   display: flex;
-  width: 1060px;
+  width: 1056px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 70px;
+  margin: 0 71px 0 73px;
 }
 
 .pagination-list{
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .page-footer{
@@ -498,13 +499,35 @@ body {
   margin: 0;
 }
 
-.subscription .standart-text{
-  padding-bottom: 46px;
-  margin: 0;
+.subscription p{
+  margin-top: 0;
+  margin-bottom: 46px;
 }
 
 .subscription-form{
-  padding-bottom: 80px;
+  margin: 0 auto;
+  width: 806px;
+  padding-bottom: 93px;
+}
+
+.email-input{
+  padding: 0;
+  padding-left: 23px;
+  margin: 0;
+  width: 577px;
+  height: 60px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  background: #F2F2F2;
+}
+
+.subscription-form .button{
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  height: 60px;
+  border: none;
+  border-radius: 0 10px 10px 0 ;
 }
 
 .page-heading{
@@ -605,4 +628,43 @@ body {
 
 .output-pattern-select{
   margin-left: auto;
+}
+
+.finding-hotels-list{
+  list-style: none;
+}
+
+.hotel-card{
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+}
+
+.hotel-card img{
+  order: -1;
+}
+
+.pagination-list-item{
+  margin-right: 7px;
+}
+
+.pagination-button{
+  display:block;
+  width: 23px;
+  height: 36px;
+  padding: 12px 19px;
+}
+
+.page-count-selection{
+  border: none;
+  padding: 0;
+}
+
+.page-count-select{
+  width: 160px;
+  height: 49px;
+  margin-left: 44px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  background-color: #FFFFFF;
 }
