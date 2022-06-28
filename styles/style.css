@@ -357,9 +357,89 @@ body {
   margin: 0 auto;
 }
 
+.advantages  .title{
+  margin-bottom: 90px;
+}
+
+.adv-block-inner{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  padding: 0;
+  margin: 0;
+  width: 1200px;
+  grid-row-start: 2;
+
+}
+
+.advantages-block{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+  "as1 as1 as1"
+  "as1 as1 as1"
+  "as2 as2 as2"
+  "as3 as4 as5";
+  grid-template-rows: 384px 384px 384px 384px;
+  grid-template-columns: 400px 400px 400px;
+
+}
+
+.advantages-section-1{
+  grid-area: as1;
+  display: grid;
+  grid-template-rows: 384px 384px;
+  grid-template-columns: 400px 400px 400px;
+}
+
+.advantages-section-2{
+  display: grid;
+  grid-area: as2;
+  grid-template-columns: 800px 400px;
+  grid-template-rows: 384px;
+}
+
+/* .advantages-section-2 .adv-image{
+
+} */
+
+.advantages-section-3{
+  grid-area: as3;
+}
+
+.advantages-section-4{
+  grid-area: as4;
+}
+
+.advantages-section-5{
+  grid-area: as5;
+}
+
+.adv-brick{
+  display: flex;
+}
+
+.adv-brick-text{
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  row-gap: 30px;
+  margin: auto;
+}
+
+.adv-brick-text p{
+  margin: 0;
+}
+
 .search-block{
   width: 1200px;
   margin: 0 auto;
+}
+
+.search-block .title{
+  margin-top: 91px;
 }
 
 .subscription{
@@ -393,8 +473,11 @@ body {
 .search-results-container{
   width: 1057px;
   display: flex;
-  margin:0 71px 0 74px;
+  margin:0 71px 56px 74px;
+}
 
+.search-results-output{
+  margin: 0;
 }
 
 .search-results-container .output-pattern-parameters{
@@ -414,12 +497,15 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 71px 0 73px;
+  padding-top: 7px;
+  border-top: 1px solid #E6E6E6;
 }
 
 .pagination-list{
   display: flex;
   list-style: none;
   padding: 0;
+
 }
 
 .page-footer{
@@ -594,8 +680,9 @@ body {
   margin-bottom: 0;
 }
 
-.search-results-output{
-  margin: 0;
+.search-output{
+
+  margin-bottom: 50px;
 }
 
 .search-pattern-select{
@@ -630,21 +717,85 @@ body {
   margin-left: auto;
 }
 
+.finding-hotels{
+  margin: 0 71px 5px 73px;
+
+}
+
 .finding-hotels-list{
   list-style: none;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  grid-template-rows: 438px;
+  column-gap: 18px;
+  row-gap: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .hotel-card{
   display: flex;
   flex-direction: column;
   width: 340px;
+  padding: 20px;
+  margin: 0;
 }
 
 .hotel-card img{
   order: -1;
+  margin-bottom: 16px;
+}
+
+.hotel-card-heading{
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.hotel-card-price-table{
+  width: 300px;
+  margin-bottom: 16px;
+  border-collapse: collapse;
+}
+
+.hotel-card-price-table .price{
+  padding-left: 34px;
+}
+
+.card-buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.hotel-card-details-button{
+  padding: 9px 27px 8px 27px;
+}
+
+.hotel-card-favorites-button{
+  padding: 9px 20px 8px 20px;
+  border:0;
+
+}
+
+.card-rating{
+  display: grid;
+  grid-template-columns: 140px 140px;
+  row-gap: 20px;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.rating-button{
+  box-sizing: border-box;
+  width: 140px;
+  background-color: #F2F2F2;
+  padding: 9px 22px 8px 23px;
+  border-radius: 4px;
 }
 
 .pagination-list-item{
+  padding: 0;
+  margin: 0;
   margin-right: 7px;
 }
 
