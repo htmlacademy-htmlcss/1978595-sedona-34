@@ -57,8 +57,8 @@
             <h1 class="page-heading heading-text-1 heading-text-white">Гостиницы Седоны</h1>
 
             <ol class="breadcrumbs-list">
-              <li class="breadcrumbs-item "><a class="breadcrumbs-link standart-text standart-text-small-2 standart-text-white visually-hidden" href="index.    html">Главная</a></li>
-              <li class="breadcrumbs-item standart-text standart-text-small-2 standart-text-white">Гостиницы</li>
+              <li class="breadcrumbs-item"><a class="breadcrumbs-link standart-text standart-text-small-2 standart-text-white visually-hidden" href="index.    html">Главная</a></li>
+              <li class="breadcrumbs-item"><a class="breadcrumbs-link standart-text standart-text-small-2 standart-text-white">Гостиницы</a></li>
             </ol>
 
           </header>
@@ -72,9 +72,9 @@
 
             <div class="hotel-search-form-left">
 
-              <fieldset class="form-group">
+              <fieldset class="form-group infra">
 
-                <legend class="form-title  heading-text-4 heading-text-white">Инфраструктура</legend>
+                <legend class="form-title  heading-text-4 heading-text-white">Инфраструктура:</legend>
 
                 <ul class="form-list">
                   <li class="form-list-item">
@@ -101,7 +101,7 @@
 
               <fieldset class="form-group">
 
-                <legend class="form-title  heading-text-4 heading-text-white">Тип жилья</legend>
+                <legend class="form-title  heading-text-4 heading-text-white">Тип жилья:</legend>
 
                 <ul class="form-list">
                   <li class="form-list-item">
@@ -141,7 +141,7 @@
               <fieldset class="button-group">
 
                 <legend class="visually-hidden">Управление формой</legend>
-                <input class="button button-small-text-bold" type="submit" value="Применить">
+                <input class="button submit-button button-small-text-bold" type="submit" value="Применить">
                 <input class="reset-button button button-small-text" type="reset" value="Сбросить">
 
               </fieldset>
@@ -161,7 +161,7 @@
 
             <p class="search-results-output heading-text-2">Найдено гостиниц: 38</p>
 
-            <section>
+            <section class="output-pattern-parameters">
 
               <h3 class="visually-hidden">Параметры поиска</h3>
 
@@ -178,10 +178,10 @@
               <h3 class="visually-hidden">Параметры поисковой выдачи</h3>
 
               <ul class="search-output-pattern-list">
-              <li class="search-output-pattern-list-item">
+              <li class="search-output-pattern-list-item search-output-pattern-list-item-selected">
                 <a class="output-pattern-button" href="#"><span class="visually-hidden">Плитка</span></a>
-              </li class="search-output-pattern-list-item">
-              <li>
+              </li>
+              <li class="search-output-pattern-list-item">
                 <a class="output-pattern-button" href="#"><span class="visually-hidden">Слайд</span></a>
               </li>
               <li class="search-output-pattern-list-item">
@@ -208,20 +208,28 @@
 
                   <table class="hotel-card-price-table">
                     <tr class="hotel-card-price-table-row">
-                      <td class="hotel-card-price-table-cell standart-text standart-text-small">Гостиница</td>
-                      <td class="hotel-card-price-table-cell standart-text standart-text-small">От 4000 &#8381;</td>
+                      <td class="hotel-card-price-table-cell type standart-text standart-text-small">Гостиница</td>
+                      <td class="hotel-card-price-table-cell price standart-text standart-text-small">От 4000 &#8381;</td>
                     </tr>
 
                   </table>
 
-                  <a class="hotel-card-details-button button-link  button-small-text-bold" href="#">Подробнее</a>
 
-                  <button class="hotel-card-favorits-button button button-small-text-bold">В избранное</button>
+                  <div class="card-buttons">
 
-                  <span class="rating-star-4 visually-hidden">Четыре звезды</span>
+                    <a class="hotel-card-details-button button-link  button-small-text-bold" href="#">Подробнее</a>
 
+                    <button class="hotel-card-favorites-button button button-small-text-bold">В избранное</button>
 
-                  <p class="rating-button standart-text standart-text-small-2">Рейтинг: 8,5</p>
+                  </div>
+
+                  <div class="card-rating">
+
+                    <span class="rating-stars rating-star-4 visually-hidden">Четыре звезды</span>
+
+                    <p class="rating-button standart-text standart-text-small-2">Рейтинг: 8,5</p>
+
+                  </div>
 
                 </div>
 
@@ -237,19 +245,27 @@
 
                   <table class="hotel-card-price-table">
                     <tr class="hotel-card-price-table-row">
-                      <td class="hotel-card-price-table-cell standart-text standart-text-small">Гостиница</td>
-                      <td class="hotel-card-price-table-cell standart-text standart-text-small">От 5000 &#8381;</td>
+                      <td class="hotel-card-price-table-cell type standart-text standart-text-small">Гостиница</td>
+                      <td class="hotel-card-price-table-cell price standart-text standart-text-small">От 5000 &#8381;</td>
                     </tr>
 
                   </table>
 
-                  <a class="hotel-card-details-button button-link  button-small-text-bold" href="#">Подробнее</a>
+                  <div class="card-buttons">
 
-                  <button class="hotel-card-favorits-button button button-small-text-bold hotel-card-favorits-button-green">В избранное</button>
+                    <a class="hotel-card-details-button button-link  button-small-text-bold" href="#">Подробнее</a>
 
-                  <span class="rating-star-4 visually-hidden">Четыре звезды</span>
+                    <button class="hotel-card-favorites-button button button-small-text-bold hotel-card-favorits-button-green">В избранное</button>
 
-                  <p class="rating-button standart-text standart-text-small-2">Рейтинг: 9,2</p>
+                  </div>
+
+                  <div class="card-rating">
+
+                    <span class="rating-stars rating-star-4 visually-hidden">Четыре звезды</span>
+
+                    <p class="rating-button standart-text standart-text-small-2">Рейтинг: 9,2</p>
+
+                  </div>
 
                 </div>
 
@@ -266,19 +282,27 @@
 
                   <table class="hotel-card-price-table">
                     <tr class="hotel-card-price-table-row">
-                      <td class="hotel-card-price-table-cell standart-text standart-text-small">Гостиница</td>
-                      <td class="hotel-card-price-table-cell standart-text standart-text-small">От 2500 &#8381;</td>
+                      <td class="hotel-card-price-table-cell type standart-text standart-text-small">Гостиница</td>
+                      <td class="hotel-card-price-table-cell price standart-text standart-text-small">От 2500 &#8381;</td>
                     </tr>
 
                   </table>
 
-                  <a class="hotel-card-details-button button-link button-small-text-bold" href="#">Подробнее</a>
+                  <div class="card-buttons">
 
-                  <button class="hotel-card-favorits-button button button-small-text-bold">В избранное</button>
+                    <a class="hotel-card-details-button button-link button-small-text-bold" href="#">Подробнее</a>
 
-                  <span class="rating-star-3 visually-hidden">Три звезды</span>
+                    <button class="hotel-card-favorites-button button button-small-text-bold">В избранное</button>
 
-                  <p class="rating-button standart-text standart-text-small-2">Рейтинг: 6,9</p>
+                  </div>
+
+                  <div class="card-rating">
+
+                    <span class="rating-stars rating-star-3 visually-hidden">Три звезды</span>
+
+                    <p class="rating-button standart-text standart-text-small-2">Рейтинг: 6,9</p>
+
+                  </div>
 
                 </div>
 
@@ -293,19 +317,27 @@
 
                   <table class="hotel-card-price-table">
                     <tr class="hotel-card-price-table-row">
-                      <td class="hotel-card-price-table-cell standart-text standart-text-small">Гостиница</td>
-                      <td class="hotel-card-price-table-cell standart-text standart-text-small">От 1500 &#8381;</td>
+                      <td class="hotel-card-price-table-cell type standart-text standart-text-small">Гостиница</td>
+                      <td class="hotel-card-price-table-cell price standart-text standart-text-small">От 1500 &#8381;</td>
                     </tr>
 
                   </table>
 
-                  <a class="hotel-card-details-button button-link  button-small-text-bold" href="#">Подробнее</a>
+                  <div class="card-buttons">
 
-                  <button class="hotel-card-favorits-button button button-small-text-bold">В избранное</button>
+                    <a class="hotel-card-details-button button-link  button-small-text-bold" href="#">Подробнее</a>
 
-                  <span class="rating-star-2 visually-hidden">Две звезды</span>
+                    <button class="hotel-card-favorites-button button button-small-text-bold">В избранное</button>
 
-                  <p class="rating-button standart-text standart-text-small-2">Рейтинг: 5,0</p>
+                  </div>
+
+                  <div class="card-rating">
+
+                    <span class="rating-stars rating-star-2 visually-hidden">Две звезды</span>
+
+                    <p class="rating-button standart-text standart-text-small-2">Рейтинг: 5,0</p>
+
+                  </div>
 
                 </div>
 
@@ -371,8 +403,8 @@
         <section class="subscription subscription--catalog text-centered">
 
           <h3 class="visually-hidden">Подписка на рассылку</h3>
-          <p class="heading-text-2">Подпишитесь на рассылку</p>
-          <p class="standart-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="title heading-text-2">Подпишитесь на рассылку</p>
+          <p class="standart-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
 
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="POST">
 
@@ -398,13 +430,13 @@
 
         <ul class="nav-list nav-social">
           <li class="list-item">
-            <a class="social-link" href="https://vk.com/htmlacademy">Vkontakte</a>
+            <a class="social-link visually-hidden" href="https://vk.com/htmlacademy">Vkontakte</a>
           </li>
           <li class="list-item">
-            <a class="social-link" href="https://t.me/htmlacademy">Telegram</a>
+            <a class="social-link visually-hidden" href="https://t.me/htmlacademy">Telegram</a>
           </li>
           <li class="list-item">
-            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">YouTube</a>
+            <a class="social-link visually-hidden" href="https://www.youtube.com/user/htmlacademyru">YouTube</a>
           </li>
         </ul>
 
