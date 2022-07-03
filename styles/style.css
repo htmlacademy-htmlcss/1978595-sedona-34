@@ -591,6 +591,7 @@ body {
 }
 
 .subscription-form{
+  display: flex;
   margin: 0 auto;
   width: 806px;
   padding-bottom: 93px;
