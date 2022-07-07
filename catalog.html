@@ -86,20 +86,25 @@
                   <li class="form-list-item">
 
                     <label class="input-label standart-text standart-text-small standart-text-white">
-                       <input class="search-form-checkbox" type="checkbox" name="swimmingpool" checked>Бассейн
+                       <input class="visually-hidden search-form-checkbox" type="checkbox" name="swimmingpool" checked>
+                       <span class="control-mark-checkbox"></span>Бассейн
                     </label>
 
                   </li>
 
                   <li class="form-list-item">
 
-                    <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-checkbox" type="checkbox"     name="parking" checked>Парковка </label>
+                    <label class="input-label standart-text standart-text-small standart-text-white">
+                      <input class="visually-hidden search-form-checkbox" type="checkbox" name="parking" checked>
+                      <span class="control-mark-checkbox"></span>Парковка</label>
 
                   </li>
 
                   <li class="form-list-item">
 
-                    <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-checkbox" type="checkbox"   name="wifi"   >Wi-Fi </label>
+                    <label class="input-label standart-text standart-text-small standart-text-white">
+                      <input class="visually-hidden search-form-checkbox" type="checkbox" name="wifi">
+                      <span class="control-mark-checkbox"></span>Wi-Fi</label>
 
                   </li>
 
@@ -114,19 +119,21 @@
                 <ul class="form-list">
                   <li class="form-list-item">
 
-                    <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-radiobutton" type="radio"     name="hoteltype" value="hotel">Гостиница </label>
+                    <label class="input-label standart-text standart-text-small standart-text-white">
+                      <input class="visually-hidden search-form-radiobutton" type="radio" name="hoteltype" value="hotel"><span class="control-mark-radiobutton"></span>Гостиница</label>
 
                   </li>
 
                   <li class="form-list-item">
 
-                    <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-radiobutton" type="radio"     name="hoteltype" value="motel">Мотель </label>
+                    <label class="input-label standart-text standart-text-small standart-text-white">
+                       <input class="visually-hidden search-form-radiobutton" type="radio" name="hoteltype" value="motel"><span class="control-mark-radiobutton"></span>Мотель</label>
 
                   </li>
 
                   <li class="form-list-item">
 
-                    <label class="input-label standart-text standart-text-small standart-text-white"> <input class="search-form-radiobutton" type="radio"     name="hoteltype" value="apartment">Апартаменты </label>
+                    <label class="input-label standart-text standart-text-small standart-text-white"> <input class="visually-hidden search-form-radiobutton" type="radio" name="hoteltype" value="apartment"><span class="control-mark-radiobutton"></span>Апартаменты </label>
 
                   </li>
 
@@ -142,7 +149,30 @@
 
                 <legend class="form-title heading-text-4 heading-text-white">Стоимость, &#8381;:</legend>
 
-                <!-- Ползунок сделаем потом -->
+                <div class="range-slider">
+                  <div class="range-slider-inputs">
+                    <div class="range-slider-input-wrapper range-slider-input-wrapper-1">
+                      <input class="slider-input standart-text standart-text-small" id="sliin-1" type="number" value="0" name="min-price">
+                      <label class="range-slider-input-label  standart-text standart-text-small" for="sliin-1">от</label>
+                    </div>
+                    <div class="range-slider-input-wrapper range-slider-input-wrapper-2">
+                      <input class="slider-input standart-text standart-text-small" id="sliin-2" type="number" value="9000" name="max-price">
+                      <label class="range-slider-input-label  standart-text standart-text-small" for="sliin-2">до</label>
+                    </div>
+                  </div>
+
+                  <div class="range-slider-bar">
+                    <div class="range-slider-bar-inner">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
 
               </fieldset>
 
