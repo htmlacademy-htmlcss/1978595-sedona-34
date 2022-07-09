@@ -278,6 +278,10 @@ body{
   background-color: rgba(0,0,0,0);
 }
 
+.hotel-link{
+  color:#000;
+  text-decoration: none;
+}
 
 
 /* 2. Сетки. */
@@ -701,9 +705,19 @@ body {
   opacity: 1;
   background: transparent;
   border: none;
-  width: 60px;
+  width: 80px;
   height: 43px;
   margin-left: 15px;
+  outline: none;
+}
+
+.slider-input{
+  -moz-appearance:textfield;
+}
+
+.slider-input::-webkit-outer-spin-button,
+.slider-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .range-slider-bar{
