@@ -442,6 +442,7 @@ body {
 }
 
 .hotel-search-form-left{
+  max-width: 520px;
   display: flex;
   margin-right: auto;
   justify-content: space-between;
@@ -1320,7 +1321,7 @@ body {
 .control-mark-checkbox{
   position: absolute;
   box-sizing: border-box;
-  top: -1px;
+  top: 2px;
   left: -40px;
   width: 20px;
   height: 20px;
@@ -1331,7 +1332,7 @@ body {
 .control-mark-radiobutton{
   position: absolute;
   box-sizing: border-box;
-  top: -1px;
+  top: 2px;
   left: -40px;
   width: 20px;
   height: 20px;
@@ -1414,4 +1415,56 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background: url(../images/icons/check.svg);
+}
+
+
+/* Модальное окно */
+
+.modal-container{
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(242, 242, 242, 0.8);
+}
+
+.modal-window{
+  width: 715px;
+  margin: auto;
+  background: #FFFFFF;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  display: flex;
+}
+
+.modal-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-close-button{
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #F2F2F2;
+}
+
+.modal-content-wrapper{
+  width: 575px;
+  margin: 54px  auto 70px auto;
+}
+
+.modal-title{
+  padding: 0 3px 3px 0;
+  margin: 0;
+}
+
+.modal-input-date{
+  width: 420px;
+  height: 50px;
 }
