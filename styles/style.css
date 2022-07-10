@@ -1501,8 +1501,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-
   background: rgba(242, 242, 242, 0.8);
+  display: none;
 }
 
 .modal-window{
@@ -1547,6 +1547,7 @@ body {
   border: none;
   border-radius: 4px;
   text-indent: 18px;
+  opacity: 0.6;
 }
 
 
@@ -1562,7 +1563,7 @@ body {
 
 }
 
-.modal-paragraph-red{
+.modal-error-message{
   color: #FF5757;
 }
 
@@ -1629,11 +1630,17 @@ body {
   justify-content: stretch;
 }
 
+.modal-input{
+  color: #000000;
+  outline: none;
+}
+
 .modal-input-count{
   width: 20%;
   border: none;
   background: #F2F2F2;
   text-align: center;
+
   -moz-appearance: textfield;
 }
 
@@ -1731,4 +1738,98 @@ body {
 .modal-info-button:hover ~ .modal-info-popover{
   display: block;
 
+}
+
+.modal-close-button:hover{
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus{
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.modal-close-button:active{
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:active .modal-close-button-cross{
+  opacity: 0.3;
+}
+
+.modal-input-date:hover{
+  background-color: #E6E6E6;
+  opacity: 0.6;
+}
+
+.modal-input-date:focus{
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  outline: none;
+  opacity: 0.6;
+}
+
+.modal-input-date:active{
+  background-color: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.modal-button-minus .modal-minus{
+  opacity: 0.3;
+}
+
+.modal-button-minus:hover .modal-minus{
+  opacity: 1;
+}
+
+.modal-button-minus:focus .modal-minus{
+  opacity: 1;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  padding: 10px 3px;
+  top: 0;
+  outline: none;
+}
+
+.modal-button-minus:active .modal-minus{
+  opacity: 1;
+}
+
+.modal-button-plus .modal-plus{
+  opacity: 0.3;
+}
+
+.modal-button-plus:hover .modal-plus{
+  opacity: 1;
+}
+
+.modal-button-plus:focus .modal-plus{
+  opacity: 1;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  padding: 3px 3px;
+  top: 0;
+  outline: none;
+}
+
+.modal-button-plus:active .modal-plus{
+  opacity: 1;
+}
+
+.modal-button-find:hover{
+  background-color: #68A2CA;
+}
+
+.modal-button-find:focus{
+  background-color: #68A2CA;
+  border: 3px solid #756257;
+  outline: none;
+}
+
+.modal-button-find:active{
+  background-color: #68A2CA;
+  color: rgba(255,255,255,0.3);
 }
