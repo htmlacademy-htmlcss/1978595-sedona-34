@@ -216,95 +216,97 @@
       </footer>
     </div>
 
-    <div class="modal-container">
-      <div class="modal-window modal-search">
+    <div class="modal-switcher">
+      <div class="modal-container">
+        <div class="modal-window modal-search">
 
-        <div class="modal-content-wrapper">
+          <div class="modal-content-wrapper">
 
-          <div class="modal-heading" >
-            <h2 class="modal-title heading-text-2">Поиск гостиницы в Седоне</h2>
-            <button class="modal-close-button"><span class="visually-hidden">Закрыть</span>
-              <svg class="modal-close-button-cross" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"/>
-              </svg>
-            </button>
+            <div class="modal-heading" >
+              <h2 class="modal-title heading-text-2">Поиск гостиницы в Седоне</h2>
+              <button class="modal-close-button"><span class="visually-hidden">Закрыть</span>
+                <svg class="modal-close-button-cross" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"/>
+                </svg>
+              </button>
+            </div>
+
+            <form class="modal-form" method="POST" action="https://echo.htmlacademy.ru/">
+
+              <div class="modal-input-line modal-input-group-1">
+                <label class="modal-input-label heading-text-4" for="arrive">Дата Заезда:</label>
+                <input class="modal-input modal-input-date standart-text standart-text-small" id="arrive" type="text" name="arrivedate" value="27 апреля  2020">
+              </div>
+              <p class="modal-paragraph modal-error-message standart-text standart-text-small-2">Мы не можем отправить вас в прошлое.</p>
+
+              <div class="modal-input-line modal-input-group-2">
+                <label class="modal-input-label heading-text-4" for="leaving">Дата Выезда:</label>
+                <input class="modal-input modal-input-date standart-text standart-text-small" id="leaving" type="text" name="leavingdate" value="1  сентября 2021">
+              </div>
+              <p class="modal-paragraph standart-text standart-text-small-2">На эти даты есть свободные номера. Пока есть.</p>
+
+              <div class="modal-fieldset-bottom">
+
+                <div class="modal-fieldset-bottom-left">
+
+                  <label for="adultscount" class="modal-input-label heading-text-4">Взрослые:</label>
+                  <div class="modal-input-group">
+                    <button class="modal-button modal-button-minus">
+                      <span class="visually-hidden">Минус</span>
+                      <svg class="modal-minus" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+                      </svg>
+                    </button>
+                    <input id="adultscount" class="modal-input modal-input-count standart-text standart-text-small" type="number"  name="adultscount"   value="2">
+                    <button class="modal-button modal-button-plus">
+                      <span class="visually-hidden">Плюс</span>
+                      <svg class="modal-plus" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                      </svg>
+                    </button>
+                  </div>
+
+                </div>
+
+                <div class="modal-fieldset-bottom-right">
+
+                  <label for="childrencount" class="modal-input-label heading-text-4" >Дети:</label>
+                  <span class="modal-info-button"></span>
+
+                  <div class="modal-info-popover">
+
+                    <p class="modal-info-text standart-text standart-text-small-2">Укажите количество детей, которые будут с вами, возраст которых от 6   до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+
+                  </div>
+
+                  <div class="modal-input-group">
+                    <button class="modal-button modal-button-minus">
+                      <span class="visually-hidden">Минус</span>
+                      <svg class="modal-minus" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+                      </svg>
+                    </button>
+                    <input id="childrencount" class="modal-input modal-input-count standart-text standart-text-small" type="number"  name="children"  value="1">
+                    <button class="modal-button modal-button-plus">
+                      <span class="visually-hidden">Плюс</span>
+                      <svg class="modal-plus" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                      </svg>
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <input class="button modal-button-find button-big-text" type="submit" value="Найти">
+
+
+            </form>
+
+
           </div>
-
-          <form class="modal-form" method="POST" action="https://echo.htmlacademy.ru/">
-
-            <div class="modal-input-line modal-input-group-1">
-              <label class="modal-input-label heading-text-4" for="arrive">Дата Заезда:</label>
-              <input class="modal-input modal-input-date standart-text standart-text-small" id="arrive" type="text" name="arrivedate" value="27 апреля 2020">
-            </div>
-            <p class="modal-paragraph modal-error-message standart-text standart-text-small-2">Мы не можем отправить вас в прошлое.</p>
-
-            <div class="modal-input-line modal-input-group-2">
-              <label class="modal-input-label heading-text-4" for="leaving">Дата Выезда:</label>
-              <input class="modal-input modal-input-date standart-text standart-text-small" id="leaving" type="text" name="leavingdate" value="1 сентября 2021">
-            </div>
-            <p class="modal-paragraph standart-text standart-text-small-2">На эти даты есть свободные номера. Пока есть.</p>
-
-            <div class="modal-fieldset-bottom">
-
-              <div class="modal-fieldset-bottom-left">
-
-                <label for="adultscount" class="modal-input-label heading-text-4">Взрослые:</label>
-                <div class="modal-input-group">
-                  <button class="modal-button modal-button-minus">
-                    <span class="visually-hidden">Минус</span>
-                    <svg class="modal-minus" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
-                    </svg>
-                  </button>
-                  <input id="adultscount" class="modal-input modal-input-count standart-text standart-text-small" type="number"  name="adultscount" value="2">
-                  <button class="modal-button modal-button-plus">
-                    <span class="visually-hidden">Плюс</span>
-                    <svg class="modal-plus" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
-                    </svg>
-                  </button>
-                </div>
-
-              </div>
-
-              <div class="modal-fieldset-bottom-right">
-
-                <label for="childrencount" class="modal-input-label heading-text-4" >Дети:</label>
-                <span class="modal-info-button"></span>
-
-                <div class="modal-info-popover">
-
-                  <p class="modal-info-text standart-text standart-text-small-2">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-
-                </div>
-
-                <div class="modal-input-group">
-                  <button class="modal-button modal-button-minus">
-                    <span class="visually-hidden">Минус</span>
-                    <svg class="modal-minus" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
-                    </svg>
-                  </button>
-                  <input id="childrencount" class="modal-input modal-input-count standart-text standart-text-small" type="number"  name="children" value="1">
-                  <button class="modal-button modal-button-plus">
-                    <span class="visually-hidden">Плюс</span>
-                    <svg class="modal-plus" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
-                    </svg>
-                  </button>
-                </div>
-
-              </div>
-
-            </div>
-
-
-            <input class="button modal-button-find button-big-text" type="submit" value="Найти">
-
-
-          </form>
-
-
         </div>
       </div>
     </div>
