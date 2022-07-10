@@ -1670,6 +1670,7 @@ body {
 .modal-info-button {
   width: 25px;
   height: 25px;
+  border: none;
   border-radius: 50%;
   background-color:#83b3d3;
   background-image: url(../images/icons/info.svg);
@@ -1731,6 +1732,22 @@ body {
 }
 
 .modal-info-button:hover ~ .modal-info-popover {
+  display: block;
+}
+
+.modal-info-button:focus {
+  background-color: #68a2ca;
+}
+
+.modal-info-button:focus ~ .modal-info-popover {
+  display: block;
+}
+
+.modal-info-button:active {
+  background-color: #68a2ca;
+}
+
+.modal-info-button:active ~ .modal-info-popover {
   display: block;
 }
 
