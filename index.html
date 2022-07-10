@@ -38,7 +38,7 @@
               <a class="user-nav-link icon-link favorites-link" href="#"><span class="visually-hidden">Избранные отели</span> <span class="favorites-count"><span class="favorites-number">12</span></span></a>
             </li>
             <li class="list-item">
-              <a class="user-nav-link button-link button-small-text-bold" disabled href="#">Хочу сюда!</a>
+              <a class="user-nav-link button-link button-small-text-bold" href="#">Хочу сюда!</a>
             </li>
           </ul>
 
@@ -115,6 +115,7 @@
                   <p class="heading-text-3 heading-text-white">Там есть<br>мост дьявола</p>
                   <p class="standart-text standart-text-small standart-text-white">— №2 —</p>
                   <p class="standart-text standart-text-small standart-text-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </div>
               </div>
             </li>
 
@@ -188,7 +189,7 @@
             <a class="social-link" href="https://vk.com/htmlacademy"><span class="visually-hidden">Vkontakte</span>
               <svg class="social-icon" width="24" height="14" aria-hidden="true" focusable="false" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z"/>
-              </svg></span></a>
+              </svg></a>
           </li>
           <li class="list-item">
             <a class="social-link" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span>
@@ -229,26 +230,81 @@
             </button>
           </div>
 
-          <form class="modal-form" action="POST" action="https://echo.htmlacademy.ru/">
+          <form class="modal-form" method="POST" action="https://echo.htmlacademy.ru/">
 
-            <label class="modal-input-label heading-text-4">Дата Заезда:<input class="modal-input modal-input-date" type="date" name="arrivedate"></label>
-            <p class="modal-paragraph modal-paragraph-red">Мы не можем отправить вас в прошлое.</p>
+            <div class="modal-input-line modal-input-group-1">
+              <label class="modal-input-label heading-text-4" for="arrive">Дата Заезда:</label>
+              <input class="modal-input modal-input-date standart-text standart-text-small" id="arrive" type="text" name="arrivedate" value="27 апреля 2020">
+            </div>
+            <p class="modal-paragraph modal-paragraph-red  standart-text standart-text-small-2">Мы не можем отправить вас в прошлое.</p>
 
-            <label class="modal-input-label heading-text-4">Дата Выезда:<input class="modal-input modal-input-date" type="date" name="arrivedate"></label>
-            <p class="modal-paragraph">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="modal-input-line modal-input-group-2">
+              <label class="modal-input-label heading-text-4" for="leaving">Дата Выезда:</label>
+              <input class="modal-input modal-input-date standart-text standart-text-small" id="leaving" type="text" name="leavingdate" value="1 сентября 2021">
+            </div>
+            <p class="modal-paragraph standart-text standart-text-small-2">На эти даты есть свободные номера. Пока есть.</p>
+
+            <div class="modal-fieldset-bottom">
+
+              <div class="modal-fieldset-bottom-left">
+
+                <label for="adultscount" class="modal-input-label heading-text-4">Взрослые:</label>
+                <div class="modal-input-group">
+                  <button class="modal-button modal-button-minus">
+                    <span class="visually-hidden">Минус</span>
+                    <svg class="modal-minus" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+                    </svg>
+                  </button>
+                  <input id="adultscount" class="modal-input modal-input-count standart-text standart-text-small" type="number"  name="adultscount" placeholder="2">
+                  <button class="modal-button modal-button-plus">
+                    <span class="visually-hidden">Плюс</span>
+                    <svg class="modal-plus" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+
+              <div class="modal-fieldset-bottom-right">
+
+                <label for="childrencount" class="modal-input-label heading-text-4" >Дети:</label>
+                <span class="modal-info-button"></span>
+
+                <div class="modal-info-popover">
+
+                  <p class="modal-info-text standart-text standart-text-small-2">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+
+                </div>
+
+                <div class="modal-input-group">
+                  <button class="modal-button modal-button-minus">
+                    <span class="visually-hidden">Минус</span>
+                    <svg class="modal-minus" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+                    </svg>
+                  </button>
+                  <input id="childrencount" class="modal-input modal-input-count standart-text standart-text-small" type="number"  name="children" placeholder="1">
+                  <button class="modal-button modal-button-plus">
+                    <span class="visually-hidden">Плюс</span>
+                    <svg class="modal-plus" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
 
 
-            <label class="modal-input-label heading-text-4">Взрослые:<button class="modal-button modal-button-minus">-</button><input class="modal-input" type="number"  name="arrivedate"></label>
-            <button class="modal-button modal-button-plus">+</button>
-
-
-            <label class="modal-input-label heading-text-4">Дети:<button class="modal-button modal-button-minus">-</button><input class="modal-input" type="number"  name="arrivedate"></label>
-            <button class="modal-button modal-button-plus">+</button>
-
-            <input class="button modal-button" type="submit" value="Найти">
+            <input class="button modal-button-find button-big-text" type="submit" value="Найти">
 
 
           </form>
+
+
         </div>
       </div>
     </div>
