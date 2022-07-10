@@ -283,6 +283,25 @@ body{
   text-decoration: none;
 }
 
+.select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* -ms-appearance: none; */
+  appearance: none;
+  background-image: url(../images/icons/select-arrow.svg);
+  background-position-y: center;
+  background-repeat: no-repeat;
+
+}
+
+.page-count-select{
+  background-position-x: 128px;
+}
+
+.search-pattern-select{
+  background-position-x: 258px;
+}
+
 
 /* 2. Сетки. */
 
@@ -333,7 +352,6 @@ body {
 }
 
 .nav-user{
-  /* max-width: 264px; */
   margin-right: 70px;
   margin-left: auto;
 }
@@ -386,10 +404,6 @@ body {
   grid-template-columns: 800px 400px;
   grid-template-rows: 384px;
 }
-
-/* .advantages-section-2 .adv-image{
-
-} */
 
 .advantages-section-3{
   grid-area: as3;
@@ -471,6 +485,7 @@ body {
 
 .search-results-output{
   margin: 0;
+  padding-top: 8px;
 }
 
 .search-results-container .output-pattern-parameters{
@@ -618,6 +633,10 @@ body {
 .nav-social{
   display: flex;
 
+}
+
+.ha-link{
+  margin-top: 2px;
 }
 
 .page-heading{
@@ -1003,6 +1022,7 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background-color: #FFFFFF;
+  padding-left: 20px;
 }
 
 
@@ -1495,7 +1515,8 @@ body {
 /* Модальное окно */
 
 .modal-switcher{
-  display: block;
+  display: none;
+
 }
 
 .modal-container{
@@ -1506,6 +1527,7 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
+  z-index: 5;
 }
 
 .modal-window{
@@ -1768,11 +1790,6 @@ body {
   right: 0;
 
 }
-
-/* .modal-close-button:focus .modal-close-button-cross{
-  top: 16px;
-  left: 17px;
-} */
 
 .modal-close-button:active{
   background-color: #E6E6E6;
