@@ -44,7 +44,7 @@ body {
 /*1.1.1. Простой текст */
 
 .standart-text {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -70,7 +70,7 @@ body {
 /* 1.1.2. Заголовки */
 
 .heading-text-1 {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -78,7 +78,7 @@ body {
 }
 
 .heading-text-2 {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -87,7 +87,7 @@ body {
 }
 
 .heading-text-3 {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -96,7 +96,7 @@ body {
 }
 
 .heading-text-4 {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -136,7 +136,7 @@ body {
 .button,
 .button-link,
 .rating-button {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -164,7 +164,7 @@ body {
 /* 1.1.5. Одиночные компоненты */
 
 .tel-link {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
