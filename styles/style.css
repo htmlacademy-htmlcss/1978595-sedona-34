@@ -1477,7 +1477,7 @@ body {
 /* Модальное окно */
 
 .modal-switcher {
-  display: block;
+  display: none;
 }
 
 .modal-container {
