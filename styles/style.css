@@ -437,7 +437,8 @@ body {
 }
 
 .search-block .title {
-  margin-top: 91px;
+  margin-top: 89px;
+  margin-bottom: 30px;
 }
 
 .subscription {
@@ -538,7 +539,7 @@ body {
 
 .nav-site .nav-link {
   display: block;
-  padding: 20px 17px;
+  padding: 17px 17px;
 }
 
 .nav-user {
@@ -578,7 +579,7 @@ body {
 .search-block .standart-text {
   width: 595px;
   margin: 0 auto;
-  padding-bottom: 55px;
+  padding-bottom: 54px;
 }
 
 .search-block .button-link {
@@ -590,7 +591,7 @@ body {
 }
 
 .subscription .title {
-  padding-top: 94px;
+  padding-top: 97px;
   padding-bottom: 29px;
   margin: 0;
 }
@@ -605,6 +606,8 @@ body {
   margin: 0 auto;
   width: 806px;
   padding-bottom: 93px;
+  position: relative;
+  left: 2px;
 }
 
 .email-input {
@@ -632,7 +635,7 @@ body {
 }
 
 .ha-link {
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 .page-heading {
@@ -661,8 +664,6 @@ body {
   padding: 0;
   border: 0;
 }
-
-
 
 .range-slider-input-wrapper {
   display: flex;
@@ -1015,7 +1016,7 @@ body {
   width: 100%;
   border-bottom: 2px solid #756257;
   position: relative;
-  bottom:-21px;
+  bottom:-19px;
   z-index:2
 }
 
@@ -1380,7 +1381,7 @@ body {
 .control-mark-checkbox {
   position: absolute;
   box-sizing: border-box;
-  top: 2px;
+  top: 0;
   left: -40px;
   width: 20px;
   height: 20px;
@@ -1391,8 +1392,8 @@ body {
 .control-mark-radiobutton {
   position: absolute;
   box-sizing: border-box;
-  top: 2px;
-  left: -40px;
+  top: -1px;
+  left: -39px;
   width: 20px;
   height: 20px;
   background-color: #ffffff;
@@ -1503,7 +1504,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 54px;
+  margin-bottom: 50px;
   min-width: 578px;
   min-height: 60px;
 }
@@ -1536,7 +1537,7 @@ body {
 
 .modal-content-wrapper {
   width: 575px;
-  margin: 54px  auto 70px auto;
+  margin: 47px  auto 70px auto;
 }
 
 .modal-input-date {
