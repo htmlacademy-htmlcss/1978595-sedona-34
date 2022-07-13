@@ -229,6 +229,7 @@ body{
 }
 
 .hotel-searching {
+  background-color: #000000;
   background-image: url(../images/backgrounds/catalog-background.jpg);
   background-repeat: no-repeat;
 }
@@ -369,10 +370,12 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: 400px 400px 400px;
+  grid-template-rows: minmax(384px, auto);
   padding: 0;
   margin: 0;
   width: 1200px;
   grid-row-start: 2;
+  grid-auto-flow: row;
 }
 
 .advantages-block {
@@ -385,14 +388,14 @@ body {
   "as1 as1 as1"
   "as2 as2 as2"
   "as3 as4 as5";
-  grid-template-rows: 384px 384px 384px 384px;
+  grid-template-rows: minmax(384px, auto) minmax(384px, auto) minmax(384px, auto) minmax(384px, auto);
   grid-template-columns: 400px 400px 400px;
 }
 
 .advantages-section-1 {
   grid-area: as1;
   display: grid;
-  grid-template-rows: 384px 384px;
+  grid-template-rows: minmax(384px, auto) minmax(384px, auto);
   grid-template-columns: 400px 400px 400px;
 }
 
@@ -400,7 +403,7 @@ body {
   display: grid;
   grid-area: as2;
   grid-template-columns: 800px 400px;
-  grid-template-rows: 384px;
+  grid-template-rows: minmax(384px, auto);
 }
 
 .advantages-section-3 {
@@ -413,6 +416,16 @@ body {
 
 .advantages-section-5 {
   grid-area: as5;
+}
+
+.adv-item{
+  min-width: 400px;
+  min-height: 384px;
+}
+
+.advantages-section{
+  min-width: 400px;
+  min-height: 384px;
 }
 
 .adv-brick {
@@ -902,7 +915,7 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: 340px 340px 340px;
-  grid-template-rows: 438px;
+  grid-template-rows: minmax(438px, auto);
   column-gap: 18px;
   row-gap: 0;
   padding: 0;
