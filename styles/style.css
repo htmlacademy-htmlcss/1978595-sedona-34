@@ -375,6 +375,7 @@ body {
   margin: 0;
   width: 1200px;
   grid-row-start: 2;
+  grid-auto-flow: row;
 }
 
 .advantages-block {
@@ -415,6 +416,16 @@ body {
 
 .advantages-section-5 {
   grid-area: as5;
+}
+
+.adv-item{
+  min-width: 400px;
+  min-height: 384px;
+}
+
+.advantages-section{
+  min-width: 400px;
+  min-height: 384px;
 }
 
 .adv-brick {
@@ -904,7 +915,7 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: 340px 340px 340px;
-  grid-template-rows: 438px;
+  grid-template-rows: minmax(438px, auto);
   column-gap: 18px;
   row-gap: 0;
   padding: 0;
