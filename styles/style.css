@@ -211,15 +211,14 @@ body{
 }
 
 .sedona-banner {
-  /* width: 1200px;
-  height: 485px; */
   background-image: url(../images/backgrounds/banner-background.jpg);
-  /* background-size: 1200px 485px; */
+  background-color: #000000;
   background-repeat: no-repeat;
 }
 
 .subscription {
   background-image: url(../images/backgrounds/subscription-background.jpg);
+  background-color: #000000;
   background-repeat: no-repeat;
 }
 
@@ -571,15 +570,14 @@ body {
 
 .nav-user .icon-link {
   display: block;
-
   min-width: 42px;
   min-height: 66px
 }
 
 .sedona-banner {
   padding-top: 51px;
-  padding-bottom: 82px;
-  margin-bottom: 57px;
+  padding-bottom: 77px;
+  margin-bottom: 62px;
   position: relative;
 }
 
@@ -1105,7 +1103,7 @@ body {
   height: 57px;
   display: block;
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
 }
 
 .adv-brick-picto:nth-of-type(1) .adv-brick-text::before {
